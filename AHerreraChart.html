@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>AHerrera Climate Change Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+
+		<!-- Google fonts stylesheet -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- CSS for this example -->
+		<style>
+
+			/* TOP MARGIN FOR NAVBAR HEIGHT */
+			body {
+				margin-top: 54px;
+			}
+
+			/* APPLY GOOGLE FONTS */
+			body, p, mark {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+			}
+
+			.hot {
+				color: 	#B22222;
+			}
+
+			.subtitle {
+				font-size: 24px;
+			}
+
+			.jumbotron {
+				padding-bottom: 0rem;
+				background-color: transparent;
+			}
+
+			h5, h6, .h5, .h6 {
+				text-transform: uppercase;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #333;
+				letter-spacing: 0.6px;
+			}
+
+			.container2 {
+				margin-bottom: 20px;
+			}
+
+			.firstofall {
+				font-size: 20px;
+}
+				.chart1info {
+					font-size: 12px;
+				}
+
+			}
+			 h2, h3, h4, .h1, .h2, .h3, .h4 {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #333;
+				letter-spacing: -0.6px;
+			}
+			.display-1, .display-2, .display-3, .display-4 {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #333;
+				letter-spacing: -1.2px;
+			}
+
+			/* NAV */
+			.navbar {
+				padding: 0.5rem 2rem;
+			}
+			@media (min-width: 576px) {
+				.navbar {
+					padding: 0.5rem 4rem;
+				}
+			}
+			/* MEDIUM DEVICES AND UP */
+			@media (min-width: 768px) {
+				.navbar {
+					padding: 0.5rem 6rem;
+				}
+			}
+			@media (min-width: 576px) {
+				.container2 {
+					width: 400px;
+					height: auto;
+				}
+			}
+
+
+
+			/* FOOTER */
+			.dark-footer {
+				background-color: #666;
+				color: #eee;
+				padding: 2rem 0 4rem 0;
+				margin-top: 2rem;
+			}
+			.dark-footer a {
+				color: #ddd;
+				text-decoration: underline;
+			}
+			.dark-footer a:hover {
+				color: #bbb;
+				text-decoration: underline;
+			}
+
+			/* */
+			.fill-ht {
+				min-height: 90vh;
+			}
+
+			.top-margin {
+				margin-top: 1rem;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<!-- NAV -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Climate Change</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			</div>
+		</nav>
+
+		<!-- JUMBOTRON -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="display-4">The Earth is <br> Getting <span class="hot"> Hot. </span> </h1>
+				<h3 class="subtitle">and we're seriously not joking</h3>
+			</div>
+		</div>
+
+
+		<div class="container2">
+					<img class="Earth" src="images/Earth.jpeg" alt="#" style="width:100%;"height="auto">
+		</div>
+
+
+		<!-- CONTAINER -->
+		<div class="container">
+
+			<!-- ROW -->
+			<div class="row">
+
+				<div class="col-sm-4">
+					<p> <span class="firstofall"><strong> First of All.</strong> </span> you need to see is the increase of the average surface temperature from 2015-1017. </p>
+				</div>
+
+				<br><br>
+
+				<div class="col-sm-8 fill-ht">
+					<canvas id="myChart" width="900" height="300"></canvas>
+						<p class="chart1info"> *the base is the twentieth century average and vertically is the anomallies.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<p>
+			<a href="https://www.chartjs.org/" target="_blank">Chartjs.org</a><br>
+			<a href="https://www.chartjs.org/samples/latest/" target="_blank">Chartjs.org/samples</a><br>
+			<a href="https://www.chartjs.org/docs/latest/" target="_blank">Chartjs.org/docs</a><br>
+		</p>
+
+		<!-- FOOTER -->
+		<footer class="dark-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p>Data-Visual © 2019</p>
+					</div>
+					<div class="col">
+						<p class="float-right">
+							<a href="#">Back to top</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- BOOTSTRAP JS DEPENDENCIES: first jQuery, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<!-- CHART.JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
+		<!-- CUSTOM JS -->
+		<script>
+
+			// CONTEXT: where the chart goes
+			var ctx = $("#myChart")[0].getContext('2d');
+
+			// DATA
+			var chartData = [1.64, 1.71, 1.51];
+			var chartLabels = ["2015", "2016", "2017"];
+
+			// CHART
+			var myChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: chartLabels,
+					datasets: [{
+						data: chartData
+					}]
+				},
+				options: {
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}]
+					},
+		    	responsive: true,
+				  legend: {
+				    display: false
+				  }
+				}
+			});
+
+		</script>
+
+
+	</body>
+</html>
